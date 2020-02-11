@@ -10,13 +10,15 @@ from collections import namedtuple
 import numpy as np
 
 class ClassName:
-	instance_variable = None
-	def __init__(self, name):	#Self is automatically passed in when called on an instance of the class
-		self.name = name		#Another instance variable; created at runtime
+	class_variable = None
+	#Self is automatically passed in when called on an instance of the class
+	def __init__(self, name):
+		#An instance variable; created at runtime
+		self.name = name
 	def instance_method(self):
 		pass
 	def class_method():
 		pass
-
-if __name__ == "__main__":		#Runs when this program is called. Is not called when this is imported as a module.
+#Runs when this program is called. Is not called when this is imported as a module.
+if __name__ == "__main__":
 	print("You've run example.py")
