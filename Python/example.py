@@ -18,5 +18,5 @@ class ClassName:
 	def class_method():
 		pass
 
-if __name__ == "__main__":
+if __name__ == "__main__":		#Runs when this program is called. Is not called when this is imported as a module.
 	print("You've run example.py")
